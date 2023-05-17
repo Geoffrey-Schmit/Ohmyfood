@@ -3,9 +3,11 @@ header {
 
     .header__logo {
         padding-top: 15px;
+
         h1 {
             height: 48px;
             margin: 0;
+
             font-family: $title-font;
             font-style: italic;
             font-weight: 400;
@@ -15,6 +17,7 @@ header {
         }
     }
     .header__location {
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
         height: 50px;
         background: #eaeaea;
         display: flex;
