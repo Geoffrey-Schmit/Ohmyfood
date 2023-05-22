@@ -3,6 +3,7 @@
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
+$color-bg-gray: #f7f7f7;
 
 $main-font: 'Roboto', sans-serif;
 $title-font: 'Shrikhand', cursive;
@@ -16,4 +17,9 @@ $title-font: 'Shrikhand', cursive;
     width: 100%;
     min-width: 320px;
     max-width: 1440px;
+}
+
+.rounded {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
 }

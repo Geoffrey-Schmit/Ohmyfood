@@ -1,0 +1,27 @@
+.search {
+    padding: 15px;
+    &__select {
+        background: $color-bg-gray;
+        display: flex;
+        gap: 10px;
+        padding: 15px 0;
+        margin: 20px 0;
+        &__number {
+            width: 24px;
+            height: 24px;
+            background: $primary-color;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+        &__fa1,
+        &__fa2 {
+            color: #7e7e7e;
+        }
+        &__fa3 {
+            color: $primary-color;
+        }
+    }
+}
