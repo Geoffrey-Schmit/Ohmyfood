@@ -1,0 +1,15 @@
+.card {
+    height: 251px;
+    background-color: white;
+    border-radius: 20px;
+
+    margin-top: 15px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.restaurant__card__img img {
+    border-radius: 20px 20px 0 0;
+    max-height: 193px;
+    width: 100%;
+    object-fit: cover;
+}

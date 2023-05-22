@@ -1,0 +1,12 @@
+.restaurant {
+    background: $color-bg-gray;
+    padding: 15px;
+    .restaurant__card__description_global {
+        padding-left: 10px;
+    }
+    .restaurant__card__description__favorites {
+        position: absolute;
+        left: 250px;
+        bottom: 25px;
+    }
+}

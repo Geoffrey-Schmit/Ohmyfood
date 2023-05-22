@@ -8,3 +8,18 @@
     color: #ffffff;
     font-weight: 500;
 }
+
+.btn-new {
+    position: absolute;
+    top: 15px;
+    left: 200px;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-bg-green;
+    color: #008766;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
