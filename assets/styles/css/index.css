@@ -28,7 +28,7 @@
 .btn-new {
   position: absolute;
   top: 15px;
-  left: 200px;
+  right: 10px;
   width: 80px;
   height: 30px;
   display: flex;
@@ -140,6 +140,6 @@ header .header__location {
 }
 .restaurant .restaurant__card__description__favorites {
   position: absolute;
-  left: 250px;
+  right: 20px;
   bottom: 25px;
 }/*# sourceMappingURL=index.css.map */
