@@ -7,6 +7,8 @@
         padding: 15px 0;
         margin: 20px 0;
         &__number {
+            position: absolute;
+            left: 5px;
             width: 24px;
             height: 24px;
             background: $primary-color;
@@ -19,9 +21,11 @@
         &__fa1,
         &__fa2 {
             color: #7e7e7e;
+            padding-left: 30px;
         }
         &__fa3 {
             color: $primary-color;
+            padding-left: 30px;
         }
     }
 }

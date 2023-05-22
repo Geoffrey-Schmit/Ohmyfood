@@ -80,6 +80,8 @@ header .header__location {
   margin: 20px 0;
 }
 .search__select__number {
+  position: absolute;
+  left: 5px;
   width: 24px;
   height: 24px;
   background: #9356dc;
@@ -91,7 +93,9 @@ header .header__location {
 }
 .search__select__fa1, .search__select__fa2 {
   color: #7e7e7e;
+  padding-left: 30px;
 }
 .search__select__fa3 {
   color: #9356dc;
+  padding-left: 30px;
 }/*# sourceMappingURL=index.css.map */
