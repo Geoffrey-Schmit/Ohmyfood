@@ -5,6 +5,7 @@ $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 $color-bg-gray: #f7f7f7;
 $color-bg-green: #99e2d0;
+$color-bg-footer: #353535;
 
 $main-font: 'Roboto', sans-serif;
 $title-font: 'Shrikhand', cursive;
@@ -12,6 +13,16 @@ $title-font: 'Shrikhand', cursive;
 * {
     margin: 0;
     font-family: $main-font;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .main-container {
