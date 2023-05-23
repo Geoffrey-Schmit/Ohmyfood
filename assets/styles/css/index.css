@@ -151,10 +151,21 @@ header .header__location {
 .restaurant .restaurant__card__description_global {
   padding-left: 10px;
 }
-.restaurant .restaurant__card__description__favorites {
+.restaurant .restaurant__card__description__favorites img {
   position: absolute;
   right: 20px;
   bottom: 25px;
+  height: 22px;
+  width: 22px;
+}
+.restaurant .restaurant__card__description__favorites .heart-gradient {
+  visibility: hidden;
+}
+.restaurant .restaurant__card__description__favorites:hover .heart-gradient {
+  visibility: visible;
+}
+.restaurant .restaurant__card__description__favorites:hover .heart-classic {
+  visibility: hidden;
 }
 
 footer {

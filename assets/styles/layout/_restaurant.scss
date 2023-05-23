@@ -5,8 +5,23 @@
         padding-left: 10px;
     }
     .restaurant__card__description__favorites {
-        position: absolute;
-        right: 20px;
-        bottom: 25px;
+        img {
+            position: absolute;
+            right: 20px;
+            bottom: 25px;
+            height: 22px;
+            width: 22px;
+        }
+        .heart-gradient {
+            visibility: hidden;
+        }
+        &:hover {
+            .heart-gradient {
+                visibility: visible;
+            }
+            .heart-classic {
+                visibility: hidden;
+            }
+        }
     }
 }
