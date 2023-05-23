@@ -146,7 +146,7 @@ header .header__location {
 
 .restaurant {
   background: #f7f7f7;
-  padding: 15px;
+  padding: 30px 15px;
 }
 .restaurant .restaurant__card__description_global {
   padding-left: 10px;
@@ -160,7 +160,6 @@ header .header__location {
 footer {
   background: #353535;
   padding: 15px;
-  margin-top: 30px;
 }
 footer .footer__logo h2 {
   padding-bottom: 15px;
