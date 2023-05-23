@@ -1,6 +1,9 @@
 footer {
     background: $color-bg-footer;
     padding: 15px;
+    a {
+        color: white;
+    }
 
     .footer__logo {
         h2 {

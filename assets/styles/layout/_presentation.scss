@@ -1,0 +1,21 @@
+.presentation {
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.card__menu__title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__restaurant {
+        h2 {
+            font-family: $title-font;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 41px;
+        }
+    }
+}

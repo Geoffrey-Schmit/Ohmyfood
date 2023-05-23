@@ -13,7 +13,7 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .main-container {
@@ -61,6 +61,14 @@ a {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.card-menu {
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  background: #f7f7f7;
+}
+
 .restaurant__card__img img {
   border-radius: 20px 20px 0 0;
   max-height: 193px;
@@ -84,6 +92,13 @@ header .header__logo h1 {
   font-size: 30px;
   line-height: 44px;
   text-align: center;
+}
+header .header__logo .fa-sharp {
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  left: 23px;
+  top: 25px;
 }
 header .header__location {
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -172,6 +187,9 @@ footer {
   background: #353535;
   padding: 15px;
 }
+footer a {
+  color: white;
+}
 footer .footer__logo h2 {
   padding-bottom: 15px;
   font-family: "Shrikhand", cursive;
@@ -191,4 +209,23 @@ footer .footer__navbar__link .fa-solid {
   width: 11px;
   height: 13px;
   padding-right: 15px;
+}
+
+.presentation img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__menu__title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card__menu__title__restaurant h2 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
 }/*# sourceMappingURL=index.css.map */
