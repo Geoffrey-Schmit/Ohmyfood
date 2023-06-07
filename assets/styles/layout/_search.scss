@@ -1,14 +1,17 @@
 .search {
     padding: 15px;
+
     &__select {
         background: $color-bg-gray;
+        width: 100%;
+        // max-width: 300px;
         display: flex;
         gap: 10px;
         padding: 15px 0;
-        margin: 20px 0;
+        margin: 10px 20px;
         &__number {
             position: absolute;
-            left: 5px;
+            transform: translateX(-50%);
             width: 24px;
             height: 24px;
             background: $primary-color;
