@@ -6,6 +6,7 @@
     }
 }
 #menu {
+    position: relative;
     background: white;
     width: 100%;
     display: flex;
@@ -14,7 +15,8 @@
 }
 
 .card__menu {
-    margin-top: -200px;
+    margin-top: -50px;
+    box-sizing: border-box;
     width: 100%;
     padding: 0 20px;
     border-radius: 20px 20px 0 0;
@@ -25,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 15px 0;
     &__restaurant {
         h2 {
             font-family: $title-font;
@@ -51,5 +54,154 @@
                 }
             }
         }
+    }
+}
+.submenu {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 15px;
+    &__title {
+        text-transform: uppercase;
+        font-weight: normal;
+        padding-bottom: 5px;
+        position: relative;
+        &::after {
+            content: '';
+            width: 40px;
+            height: 3px;
+            background-color: $tertiary-color;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}
+.menuItem {
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: itemAppear 0.6s;
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+    &:hover &__wrapIcon {
+        transform: rotate(0);
+    }
+    &__header {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
+    &__title {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 0;
+    }
+    &__price {
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 28px;
+    }
+    &__confirmation {
+        background-color: $tertiary-color;
+        width: 60px;
+        margin: -15px -75px -15px -15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.5s;
+    }
+    &:hover &__confirmation {
+        margin-right: -15px;
+    }
+    &__wrapIcon {
+        height: 20px;
+        width: 20px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+    }
+    &__icon {
+        color: $tertiary-color;
+    }
+}
+
+.command__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.delay-0 {
+    animation-delay: 0s;
+}
+
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.delay-3 {
+    animation-delay: 0.3s;
+}
+
+.delay-4 {
+    animation-delay: 0.4s;
+}
+
+.delay-5 {
+    animation-delay: 0.5s;
+}
+
+.delay-6 {
+    animation-delay: 0.6s;
+}
+
+.delay-7 {
+    animation-delay: 0.7s;
+}
+
+.delay-8 {
+    animation-delay: 0.8s;
+}
+
+@keyframes itemAppear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .submenus {
+        display: flex;
+        justify-content: space-around;
     }
 }
