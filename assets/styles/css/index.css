@@ -101,7 +101,7 @@ header {
   width: 100%;
 }
 header .header__logo {
-  padding-top: 15px;
+  padding: 15px;
 }
 header .header__logo h1 {
   height: 48px;
@@ -112,13 +112,6 @@ header .header__logo h1 {
   font-size: 30px;
   line-height: 44px;
   text-align: center;
-}
-header .header__logo .fa-sharp {
-  height: 17px;
-  width: 17px;
-  position: absolute;
-  left: 23px;
-  top: 25px;
 }
 header .header__location {
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -281,9 +274,18 @@ footer .footer__navbar__link .fa-solid {
   margin-top: -50px;
   box-sizing: border-box;
   width: 100%;
+  max-width: 1100px;
   padding: 0 20px;
   border-radius: 20px 20px 0 0;
   background: #f7f7f7;
+}
+@media screen and (min-width: 800px) {
+  .card__menu {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card__menu__title {
@@ -291,6 +293,11 @@ footer .footer__navbar__link .fa-solid {
   align-items: center;
   justify-content: space-between;
   margin: 15px 0;
+}
+@media screen and (min-width: 800px) {
+  .card__menu__title {
+    justify-content: center;
+  }
 }
 .card__menu__title__restaurant h2 {
   font-family: "Shrikhand", cursive;
@@ -306,6 +313,11 @@ footer .footer__navbar__link .fa-solid {
   position: absolute;
   right: 10px;
   bottom: -15px;
+}
+@media screen and (min-width: 800px) {
+  .card__menu__title__favorites i {
+    left: 30px;
+  }
 }
 .card__menu__title__favorites i.heart-full {
   opacity: 0;
@@ -323,6 +335,12 @@ footer .footer__navbar__link .fa-solid {
   max-width: 100%;
   overflow: hidden;
   padding: 0 15px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 800px) {
+  .submenu {
+    min-width: 600px;
+  }
 }
 .submenu__title {
   text-transform: uppercase;
@@ -371,10 +389,10 @@ footer .footer__navbar__link .fa-solid {
   overflow: hidden;
 }
 .menuItem__description {
+  margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 0;
 }
 .menuItem__price {
   font-weight: bold;
@@ -453,18 +471,16 @@ footer .footer__navbar__link .fa-solid {
   animation-delay: 0.8s;
 }
 
+.delay-9 {
+  animation-delay: 0.9s;
+}
+
 @keyframes itemAppear {
   0% {
     transform: scale(0);
   }
   100% {
     transform: scale(1);
-  }
-}
-@media screen and (min-width: 800px) {
-  .submenus {
-    display: flex;
-    justify-content: space-around;
   }
 }
 .spinner {
