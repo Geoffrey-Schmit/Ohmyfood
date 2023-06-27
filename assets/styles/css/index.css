@@ -101,6 +101,7 @@ header {
   width: 100%;
 }
 header .header__logo {
+  position: relative;
   padding: 15px;
 }
 header .header__logo h1 {
@@ -112,6 +113,10 @@ header .header__logo h1 {
   font-size: 30px;
   line-height: 44px;
   text-align: center;
+}
+header .header__logo i {
+  position: absolute;
+  top: 25px;
 }
 header .header__location {
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -192,25 +197,6 @@ header .header__location {
 }
 .restaurant .restaurant__card__description_global {
   padding-left: 10px;
-}
-.restaurant .restaurant__card__description__favorites,
-.restaurant i {
-  position: absolute;
-  right: 15px;
-  bottom: 10px;
-}
-.restaurant .restaurant__card__description__favorites.heart-full,
-.restaurant i.heart-full {
-  opacity: 0;
-}
-.restaurant .restaurant__card__description__favorites.heart-full:hover,
-.restaurant i.heart-full:hover {
-  transition: 0.5s;
-  opacity: 1;
-  background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
 }
 
 footer {
@@ -312,12 +298,7 @@ footer .footer__navbar__link .fa-solid {
 .card__menu__title__favorites i {
   position: absolute;
   right: 10px;
-  bottom: -15px;
-}
-@media screen and (min-width: 800px) {
-  .card__menu__title__favorites i {
-    left: 30px;
-  }
+  top: -35px;
 }
 .card__menu__title__favorites i.heart-full {
   opacity: 0;
@@ -331,6 +312,12 @@ footer .footer__navbar__link .fa-solid {
   color: transparent;
 }
 
+@media screen and (min-width: 800px) {
+  .stick {
+    left: 50%;
+    top: 15px;
+  }
+}
 .submenu {
   max-width: 100%;
   overflow: hidden;

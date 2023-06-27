@@ -52,10 +52,8 @@
         i {
             position: absolute;
             right: 10px;
-            bottom: -15px;
-            @media screen and (min-width: 800px) {
-                left: 30px;
-            }
+            top: -35px;
+
             &.heart-full {
                 opacity: 0;
                 &:hover {
@@ -67,6 +65,13 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .stick {
+        left: 50%;
+        top: 15px;
     }
 }
 .submenu {
