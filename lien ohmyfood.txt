@@ -1,8 +1,0 @@
-Lien vers le repo GitHub :
-
-https://github.com/Geoffrey-Schmit/Ohmyfood
-
-
-Lien vers la page en ligne du projet :
-
-https://geoffrey-schmit.github.io/Ohmyfood/
